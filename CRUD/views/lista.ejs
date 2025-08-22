@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Usuários</title>
+</head>
+<body>
+  <%- include("partials/titulo.ejs") %>
+  <%- include("partials/menu.ejs") %>
+
+  <h2>Usuários Cadastrados</h2>
+  <ul>
+    <% usuarios.forEach(u => { %>
+      <li>
+        <b><%= u.nome %></b> - <%= u.email %> - <%= u.cidade %>
+        | <a href="/editar/<%= u.id %>">Editar</a>
+        | <a href="/delete/<%= u.id %>">Deletar</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

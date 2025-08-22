@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sucesso</title>
+</head>
+<body>
+  <%- include("partials/titulo.ejs") %>
+  <%- include("partials/menu.ejs") %>
+
+  <h2>Usuário cadastrado com sucesso!</h2>
+  <p><b>Nome:</b> <%= usuario.nome %></p>
+  <p><b>Email:</b> <%= usuario.email %></p>
+  <p><b>Cidade:</b> <%= usuario.cidade %></p>
+</body>
+</html>
